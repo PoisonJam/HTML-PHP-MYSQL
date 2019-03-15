@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Login Page</title>
+		
+		<style>
+			
+			.imageDiv
+			{
+				text-align: center;
+				margin: 24px 0 50px 0;
+			}
+			
+			img.KeiserLogo
+			{
+				width: 40%;
+				border-radius: 50%;
+			}
+			
+			span.password
+			{
+				float: right;
+				padding-top: 16px;
+			}
+			
+			.UserDiv
+			{
+				text-align: center;
+				width: 100%;
+				padding-bottom: 20px;
+			}
+			
+			input[type = text], input[type = password]
+			{
+				width: 66%;
+				text-align: center;
+				padding: 12px 20px;
+				margin: 8px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
+				box-sizing: border-box;
+			}
+			
+			.PasswordDiv
+			{
+				text-align: center;
+				width: 100%;
+				padding-bottom: 20px;
+			}
+			
+			button
+			{
+				background-color: blue;
+				color: white;
+				padding: 14px 20px;
+				margin: 8px 0;
+				border: none;
+				cursor: pointer;
+				width: 50%;
+			}
+			
+			.ButtonDiv
+			{
+				width: 100%;
+				text-align: center;
+			}
+			
+			button:hover 
+			{
+				opacity: 0.8;
+			}
+			
+			@media screen and (max-width: 300px) 
+			{
+				span.password 
+				{
+					display: block;
+					float: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<form action = "LoginHandler.php">
+			<div class = "imageDiv">
+			
+				<img src = "KeiserLogo.png" alt = "Avatar" class = "avatar">
+			
+			</div>
+
+			<div class = "UserDiv">
+			
+				<label for = "userName"><b>Username:</b></label>
+				</br>
+				<input type = "text" placeholder = "Enter User Name"
+					name = "userName" required>
+			
+			</div>
+			<div class = "PasswordDiv">
+					
+				<label for = "Password"><b>Password:</b></label>
+				</br>
+				<input type = "password" placeholder = "Enter Password"
+					name = "Password" required>
+				</br>
+				
+				<label>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+			
+			</div>
+			
+			<div class = "ButtonDiv">
+			
+				<button type = "submit">Login</button>
+			
+			</div>
+			
+		</form>
+	</body>
+</html>

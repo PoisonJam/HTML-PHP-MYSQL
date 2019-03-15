@@ -1,0 +1,307 @@
+<html>
+	<head>
+		<title>
+			Keiser Resource System Login
+		</title>
+		<style>
+		
+			.column {
+				float: left;
+				width: 33%;
+			}
+
+			/* Button Style */
+			button.submit {
+				background-color: #0000A0;
+				color: white;
+				padding: 14px 20px;
+				margin: 8px 0;
+				border: none;
+				align: right;
+				cursor: pointer;
+				width: 20%;
+			}
+			#attendance {
+				font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				border-collapse: collapse;
+				width: 100%;
+			}
+			
+			#attendance td, #attendance th {
+				border: 5px solid #ddd;
+				padding: 5px;
+			}
+			
+			#attendance tr:nth-child(even){background-color: #f2f2f2;}
+
+			#attendance tr:hover {background-color: #ddd;}
+			
+			#attendance tr { 
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+			
+			#attendance th {
+				padding-top: 12px;
+				padding-bottom: 12px;
+				text-align: center;
+				background-color: #0000A0;
+				color: white;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<table id="attendance"style="width:100%">
+			<col align="left">
+			<col align="left">
+			<col align="left">
+			<col align="left">
+			<col align="left">
+			<col align="left">
+				<tr>
+					<th>Week</th>
+					<th>Monday</th>
+					<th>Tuesday</th>
+					<th>Wednesday</th>
+					<th>Thursday</th>
+					<th>Friday</th>
+					<th>ClassID</th>
+					<th>Date Period</th>
+				</tr>
+				<tr align = "left">
+					<td id = "week">1</td>
+					<td>
+						<div class="search_categories">
+							<div class="select">
+								<div class = "column">
+									<label>HW: </label></br><select name="search_categories" id="search_categories">
+										<option value="1" selected="selected"></option>
+										<option value="2">1</option>
+										<option value="3">2</option>
+										<option value="4">3</option>
+										<option value="5">4</option>
+										<option value="6">5</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="search_categories">
+							<div class="select">
+								<div class = "column">
+									<label>Quizzes: </label></br><select name="search_categories" id="search_categories">
+										<option value="1" selected="selected"></option>
+										<option value="2">1</option>
+										<option value="3">2</option>
+										<option value="4">3</option>
+										<option value="5">4</option>
+										<option value="6">5</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="search_categories">
+							<div class="select">
+								<div class = "column">
+									<label>Tests: </label></br><select name="search_categories" id="search_categories">
+										<option value="1" selected="selected"></option>
+										<option value="2">1</option>
+										<option value="3">2</option>
+										<option value="4">3</option>
+										<option value="5">4</option>
+										<option value="6">5</option>
+									</select>
+								</div>
+							</div>
+						</div>				
+					</td>
+					<td>
+						<div class="search_categories">
+							<div class="select">
+								<div class = "column">
+									<label>HW : </label></br><select name="search_categories" id="search_categories">
+										<option value="1" selected="selected"></option>
+										<option value="2">1</option>
+										<option value="3">2</option>
+										<option value="4">3</option>
+										<option value="5">4</option>
+										<option value="6">5</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="search_categories">
+							<div class="select">
+								<div class = "column">
+									<label>Quizzes : </label></br><select name="search_categories" id="search_categories">
+										<option value="1" selected="selected"></option>
+										<option value="2">1</option>
+										<option value="3">2</option>
+										<option value="4">3</option>
+										<option value="5">4</option>
+										<option value="6">5</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="search_categories">
+							<div class="select">
+								<div class = "column">
+									<label>Tests : </label></br><select name="search_categories" id="search_categories">
+										<option value="1" selected="selected"></option>
+										<option value="2">1</option>
+										<option value="3">2</option>
+										<option value="4">3</option>
+										<option value="5">4</option>
+										<option value="6">5</option>
+									</select>
+								</div>
+							</div>
+						</div>						
+					</td>
+					<td>
+						<div class="search_categories">
+							<div class="select">
+								<div class = "column">
+									<label>HW : </label></br><select name="search_categories" id="search_categories">
+										<option value="1" selected="selected"></option>
+										<option value="2">1</option>
+										<option value="3">2</option>
+										<option value="4">3</option>
+										<option value="5">4</option>
+										<option value="6">5</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="search_categories">
+							<div class="select">
+								<div class = "column">
+									<label>Quizzes : </label></br><select name="search_categories" id="search_categories">
+										<option value="1" selected="selected"></option>
+										<option value="2">1</option>
+										<option value="3">2</option>
+										<option value="4">3</option>
+										<option value="5">4</option>
+										<option value="6">5</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="search_categories">
+							<div class="select">
+								<div class = "column">
+									<label>Tests : </label></br><select name="search_categories" id="search_categories">
+										<option value="1" selected="selected"></option>
+										<option value="2">1</option>
+										<option value="3">2</option>
+										<option value="4">3</option>
+										<option value="5">4</option>
+										<option value="6">5</option>
+									</select>
+								</div>
+							</div>
+						</div>				
+					</td>
+					<td>
+						<div class="search_categories">
+							<div class="select">
+								<div class = "column">
+									<label>HW : </label></br><select name="search_categories" id="search_categories">
+										<option value="1" selected="selected"></option>
+										<option value="2">1</option>
+										<option value="3">2</option>
+										<option value="4">3</option>
+										<option value="5">4</option>
+										<option value="6">5</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="search_categories">
+							<div class="select">
+								<div class = "column">
+									<label>Quizzes : </label></br><select name="search_categories" id="search_categories">
+										<option value="1" selected="selected"></option>
+										<option value="2">1</option>
+										<option value="3">2</option>
+										<option value="4">3</option>
+										<option value="5">4</option>
+										<option value="6">5</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="search_categories">
+							<div class="select">
+								<div class = "column">
+									<label>Tests : </label></br><select name="search_categories" id="search_categories">
+										<option value="1" selected="selected"></option>
+										<option value="2">1</option>
+										<option value="3">2</option>
+										<option value="4">3</option>
+										<option value="5">4</option>
+										<option value="6">5</option>
+									</select>
+								</div>
+							</div>
+						</div>				
+					</td>
+					<td>
+						<div class="search_categories">
+							<div class="select">
+								<div class = "column">
+									<label>HW : </label></br><select name="search_categories" id="search_categories">
+										<option value="1" selected="selected"></option>
+										<option value="2">1</option>
+										<option value="3">2</option>
+										<option value="4">3</option>
+										<option value="5">4</option>
+										<option value="6">5</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="search_categories">
+							<div class="select">
+								<div class = "column">
+									<label>Quizzes : </label></br><select name="search_categories" id="search_categories">
+										<option value="1" selected="selected"></option>
+										<option value="2">1</option>
+										<option value="3">2</option>
+										<option value="4">3</option>
+										<option value="5">4</option>
+										<option value="6">5</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="search_categories">
+							<div class="select">
+								<div class = "column">
+									<label>Tests : </label></br><select name="search_categories" id="search_categories">
+										<option value="1" selected="selected"></option>
+										<option value="2">1</option>
+										<option value="3">2</option>
+										<option value="4">3</option>
+										<option value="5">4</option>
+										<option value="6">5</option>
+									</select>
+								</div>
+							</div>
+						</div>				
+					</td>					
+					<td>001</td>
+					<td></td>
+				</tr>
+
+			<!--paste here--> 
+				
+		</table>
+			<div>
+				<button class = "submit">Submit</button>
+				<button class = "submit">Edit</button>
+			</div>	
+	</body>
+</html>
